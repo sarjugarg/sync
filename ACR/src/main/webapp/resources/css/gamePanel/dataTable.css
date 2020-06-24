@@ -1,0 +1,143 @@
+div#startDate, div#endDate {
+	float: none;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+* {
+	box-sizing: border-box;.form-horizontal 
+}
+table#example {
+    width: 100%;
+    font-size: 13px;
+}
+
+#regForm {
+	background-color: #ffffff;
+	margin: 100px auto;
+	font-family: Raleway;
+	padding: 40px;
+	width: 70%;
+	min-width: 300px;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+	font-family: Raleway;
+	border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+
+button {
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+#prevBtn {
+	background-color: #d43f3a;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: #4CAF50;
+}
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #fff !important;
+	background-color: #fff !important;
+}
+
+tbody tr.odd {
+    background-color: #f1f1f1 !important;
+}
+div#divForTable {
+    border: 1px solid #c8c7cc;
+    margin-top: 39px;
+    margin-bottom: 36px;
+    font-size: 13px;
+    overflow: auto;
+}
+#md{
+	min-height:100px;
+}
+div#modal2{
+min-height: 150px !important;}
+.modal-content {
+    font-size: 14px;
+    font-family: sans-serif;
+    min-height:520px !important;
+    text-decoration: none;
+    color: black;
+}
+div#DeleteUser {
+    margin: 10% 10% 10% 10%;
+    text-align: -webkit-center;
+    font-family: sans-serif;
+    -webkit-text-fill-color: orangered;
+}
+form.form-horizontal {
+    font-size: 13px;
+    background-color: white;
+}
+.form-horizontal .form-group {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 6px !important;
+    background-color: white;
+    
+}
+div#head1 {
+    opacity: 0.9;
+    position: relative;
+    margin: 2px 2px 2px 2px;
+    border-radius: 1px 1px 1px 1px;
+    width: -webkit-fill-available;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+
+}
+
+

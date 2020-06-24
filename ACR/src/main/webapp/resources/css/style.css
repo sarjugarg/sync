@@ -1,0 +1,153 @@
+@CHARSET "ISO-8859-1";
+/* CSS Document */
+div#first_div {
+	background: url(../images/back-to-school.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 88%;
+	width: 100%;
+	left: 0%;
+	top: 11%;
+	position: absolute;
+}
+
+button#register {
+	top: 2%;
+	float: right;
+	right: 10px;
+	position: absolute;
+	background-color: #0000FF;
+	color: #FFFFFF;
+	outline: none;
+	border: 1px solid #0000FF;
+	height: 30px;
+	width: 90px;
+	border-radius: 2%;
+}
+
+button#login {
+	top: 2%;
+	float: right;
+	right: 110px;
+	position: absolute;
+	background-color: #0000FF;
+	color: #FFFFFF;
+	outline: none;
+	border: 1px solid #0000FF;
+	height: 30px;
+	width: 90px;
+	border-radius: 2%;
+}
+
+form.allform {
+	top: 6.9%;
+	position: absolute;
+	left: 2%;
+	width: 96%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+button#submit {
+	margin-left: 35%;
+	width: 100px;
+}
+
+button#submit2 {
+	margin-left: 35%;
+	width: 100px;
+}
+
+.control-label {
+	font-weight: normal;
+}
+
+span#mandatory_fields {
+	color: red;
+}
+
+.error {
+	color: red;
+}
+
+input.error {
+	border: 1px solid red;
+}
+
+textarea.error {
+	border: 1px solid red;
+}
+
+select.error {
+	border: 1px solid red;
+}
+
+label#msg {
+	color: blue;
+	margin-left: 14%;
+	top: 24%;
+	position: absolute;
+}
+
+label#failed_msg {
+	top: 0%;
+	color: crimson;
+	margin-left: 10%;
+	position: absolute;
+}
+
+div#textdiv {
+	top: 1%;
+	left: 2%;
+	width: 96%;
+	height: 6%;
+	background-color: #F5F4F9;
+	border-radius: 4px;
+	border: 1px solid #CDCDCD;
+	position: absolute;
+}
+
+span#addtext {
+	margin-left: 3%;
+	margin-top: 2%;
+	position: absolute;
+	color: #1B3F8B; 
+	font-weight: bold;
+	
+}
+
+.table1 thead tr {
+	color: #707070;
+	font-weight: normal;
+}
+
+.table1.table1-bordered thead tr th {
+	vertical-align: middle;
+}
+
+.table1 thead>tr>th, .table1 tbody>tr>th, .table11 tfoot>tr>th, .table1 thead>tr>td,
+	.table1 tbody>tr>td, .table1 tfoot>tr>td {
+	vertical-align: middle;
+}
+
+#errormsg {
+	color: red;
+	margin-left: 5%;
+}
+
+/* input,
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 3;
+} */
+
+#mobile::-webkit-input-placeholder {
+    font-size: 10px;
+   /*  line-height: 3 */;
+}
+table{ text-align: center;}
+table th{text-align: center; color: #1B3F8B;}
+.modal-title{color: #1B3F8B;}
+p{color: #1B3F8B;}
+.control-label{font-weight: bold;}
+#mandatory_fields{font-weight: bold;}
