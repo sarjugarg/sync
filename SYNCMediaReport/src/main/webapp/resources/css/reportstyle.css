@@ -1,0 +1,245 @@
+#myModal	.modal-body{
+/*     height: 500px; */
+}
+
+#myModal .modal-content
+{
+    width: 198%;
+    margin-left: -250px;
+}
+#myModal .modal-header .close{
+	color: blue;
+	opacity: 0.6;
+}
+
+table.dataTable,
+table.dataTable thead,
+table.dataTable th,
+table.dataTable td, 
+{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-collapse: collapse;
+}
+.bootstrap-datetimepicker-widget
+{
+background-color:#333;
+}
+.tag-box2 {
+	list-style: none;
+    padding: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: arial;
+    width: 100%;
+        /* border: 1px solid black; */
+        background-color: rgb(86,97,107,0.3);
+    /* border-radius: 4px; */
+}
+
+.tag-box2 li.tags.genre {
+    background: #08c;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+}
+
+.tag-box2 li.tags.channel {
+    background: #D68319;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+}
+
+.tag-box2 li.tags.language1 {
+    background: #008075;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+}
+.tag-box2 li.tags.product {
+    background: green;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+     white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag-box2 li.tags.brand {
+    background: red;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+     white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag-box2 li.tags.category {
+    background: #002680;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+     white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.tag-box2 li.tags.date_range {
+    background: #D68319;
+    color: #fff;
+    border-radius: 4px;
+    margin: 4px 3px;
+    position: relative;
+    font-size: 11px;
+}
+
+.tag-box2 li {
+    padding: 4px 6px;
+    float: left;
+    display: inline-block;
+    padding-right: 25px;
+}  
+
+.tag-box2 li.tags:hover .close {
+    /* width: 14px; */
+}
+.tag-box2 li.tags .close {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+     padding-left: 10px;
+    transform: translate(0%, -45%);
+    color: #ffffff !important;
+    opacity: 1;
+    font-size: 13px !important;
+}
+.tag-box2 * {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.tag-box2 li.tags .close:after {
+    content: 'x';
+}
+
+
+
+.selectable .ui-selected.channel{
+	background: #D68319;
+}
+
+.selectable .ui-selected-multi.channel{
+	background: #D68319;
+	
+}
+
+
+
+
+.selectable .ui-selected.language1{
+	background: #008075;
+}
+
+.selectable .ui-selected-multi.language1{
+	background: #008075;
+	
+}
+
+
+
+.selectable .ui-selected.brand{
+	background: Red;
+}
+
+.selectable .ui-selected-multi.brand{
+	background: Red;
+}
+
+.selectable .ui-selected.product{
+	background: green;
+}
+
+.selectable .ui-selected-multi.product{
+	background: green;
+}
+.selectable .ui-selected.category{
+	background: #002680;
+}
+
+.selectable .ui-selected-multi.category{
+	background: #002680;
+}
+
+
+.selectable .ui-selected.channel{
+	background: #D68319;
+}
+
+.selectable .ui-selected-multi.channel{
+	background: #D68319;
+}
+
+.selectable .ui-selected.language{
+	background: green;
+}
+
+.selectable .ui-selected-multi.language{
+	background: green;
+	
+}
+
+
+.selectable .ui-selected.genre{
+	background: #08c;
+}
+
+.selectable .ui-selected-multi.genre{
+	background: #08c;
+} 
+.selectable {
+	color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #414b53 !important;
+	box-shadow: 16px 16px 20px 2px rgba(12, 2, 2, 0.3);
+}
+
+.selectable li {
+	margin: 3px;
+	padding: 1px 0px 0px 3px;
+	font-size: 0.9em;
+	height: 20px;
+	cursor: pointer;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.open>.dropdown-menu {
+	display: block;
+	height: 280px;
+	overflow-y: auto;
+	width: 175px;
+}
+
+
+

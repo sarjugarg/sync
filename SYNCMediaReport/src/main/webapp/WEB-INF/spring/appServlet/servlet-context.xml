@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven />
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+
+	<bean id="pfsf"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<context:component-scan base-package="org.sync.controller,org.sync.rest.controller" />
+	
+		<util:properties id="viewPropertyConfigurer" location="/WEB-INF/config.properties" />
+	<context:property-placeholder
+		properties-ref="viewPropertyConfigurer" />
+
+	<bean id="ds"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="${dbclassname}" />
+ 		
+    		<property name="url" value="${dburl}" />
+		<property name="username" value="${dbusername}" />
+		<property name="password" value="${dbpassword}" />
+ 
+ 	<!-- 	<property name="url" value="jdbc:mysql://172.31.22.35:3306/analysis" /> 
+ 	    <property name="username" value="root" /> 
+	    <property name="password" value="root" />  -->
+ 	
+ 	</bean>
+	<bean id="jt" class=" org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ds" />
+	</bean>
+
+
+		<bean id="productDao" class="org.sync.daoimpl.ProductDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="productService"
+		class="org.sync.serviceimpl.ProductServiceImpl">
+	</bean>
+
+		<bean id="channelDao" class="org.sync.daoimpl.ChannelDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="channelService"
+		class="org.sync.serviceimpl.ChannelServiceImpl">
+	</bean>
+
+ 	<bean id="categoryDao" class="org.sync.daoimpl.CategoryDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="categoryService"
+		class="org.sync.serviceimpl.CategoryServiceImpl">
+	</bean>
+
+<bean id="exportdata" class="org.sync.daoimpl.ExportDataDao">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+		<bean id="brandDao" class="org.sync.daoimpl.BrandDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="brandService"
+		class="org.sync.serviceimpl.BrandServiceImpl">
+	</bean>
+			<bean id="airtimeLogic" class="org.sync.daoimpl.AirtimeLogic">
+	</bean>
+
+		<bean id="recentCardDao" class="org.sync.daoimpl.PageVisitDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="recentCardService"
+		class="org.sync.serviceimpl.PageVisitServiceImpl">
+	</bean>
+	<bean id="userDao" class="org.sync.daoimpl.UserDaoImpl">
+		<property name="jdbcTemplate" ref="jt" />
+	</bean>
+	<bean id="userService"
+		class="org.sync.serviceimpl.UserServiceImpl">
+	</bean>
+			
+  
+<!--  <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		 setting maximum upload size
+		<property name="maxUploadSize" value="14000000" />
+		</bean>
+ -->
+ 
+  </beans>
+ 
