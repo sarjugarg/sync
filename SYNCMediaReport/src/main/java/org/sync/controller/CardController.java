@@ -18,7 +18,7 @@ import org.sync.serviceimpl.PageVisitServiceImpl;
 @Controller
 public class CardController{
 	
-@Autowired
+@Autowired 
 PageVisitServiceImpl recentCardService;
 
 	@ResponseBody
